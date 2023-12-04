@@ -1,0 +1,113 @@
+
+/* Header/Blog Title */
+.row35 .header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.row35 .leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.row35 .rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.row35 .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+/* Add a card effect for articles */
+.row35 .card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row35 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .row35  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.navlink1{
+    padding: 0;
+}
+.navlink1:hover{
+    color: white;
+}
+
+
+.container11 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(../img/about.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: fadein 5s ease-in;
+}
+
+.header11 {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.container11 .logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container11 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container11 .content {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  animation: slideup 5s ease-in;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

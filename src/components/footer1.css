@@ -1,0 +1,316 @@
+#newsletter {
+    background-image: url("footer-bg.png");
+    background-color: transparent;
+    /* background-attachment: fixed; */
+  }
+  .nav .scroll-to-section {
+    display: inline-block;
+    float: right !important;
+  }
+/* 
+  .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
+    
+    .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #ffffff;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    }
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #ffffff;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color: #ffffff;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .links{
+    color: white;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
+    .modal-content{
+        background: transparent;
+    }
+    .btn-close{
+        background-color: white;
+    } */
+
+
+.dbox {
+width: 100%;
+margin-bottom: 25px;
+padding: 0 20px; }
+@media (min-width: 768px) {
+.dbox {
+margin-bottom: 0;
+padding: 0; } }
+.dbox p {
+margin-bottom: 0; }
+.dbox p span {
+font-weight: 500;
+color: #000; }
+.dbox p a {
+color: #2553b8; }
+.dbox .icon {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+
+/* background: #2553b8; */
+margin: 0 auto;
+margin-bottom: 20px; }
+.dbox .icon span {
+font-size: 20px;
+color: #fff; }
+.dbox .text {
+width: 100%; }
+
+
+
+.btn5 {
+padding: 12px 16px;
+cursor: pointer;
+border-width: 1px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 400;
+-webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+-moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+position: relative;
+margin-bottom: 20px;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s; }
+
+.btn5-primary {
+color: #fff;
+background-color: #007bff;
+border-color: #007bff; }
+.btn5-primary:hover {
+color: #fff;
+background-color: #0069d9;
+border-color: #0062cc; }
+.btn5-primary:focus, .btn5-primary.focus {
+-webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
+.btn5-primary.disabled, .btn5-primary:disabled {
+color: #fff;
+background-color: #007bff;
+border-color: #007bff; }
+.btn5-primary:not(:disabled):not(.disabled):active, .btn5-primary:not(:disabled):not(.disabled).active,
+.show > .btn5-primary.dropdown-toggle {
+color: #fff;
+background-color: #0062cc;
+border-color: #005cbf; }
+.btn5-primary:not(:disabled):not(.disabled):active:focus, .btn5-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn5-primary.dropdown-toggle:focus {
+-webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
+
+
+
+
+
+
+.Reslogin {
+color: rgb(22, 116, 204);
+text-transform: uppercase;
+letter-spacing: 2px;
+display: block;
+font-weight: bold;
+font-size: xx-large;
+}
+
+.Res {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100%;
+width: 275px;
+flex-direction: column;
+gap: 35px;
+background: #ffffff;
+/* box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe; */
+border-radius: 8px;
+margin-top: 40px;
+margin-bottom: 80px;
+/* margin-left: 40%; */
+}
+
+.ResinputBox {
+position: relative;
+width: 250px;
+padding: 10px;
+}
+
+.ResinputBox .Resin {
+width: 100%;
+padding: 10px;
+outline: none;
+border: none;
+color: rgb(22, 116, 204);
+font-size: 1em;
+background: transparent;
+border-left: 2px solid rgb(22, 116, 204);
+border-bottom: 2px solid rgb(22, 116, 204);
+transition: 0.1s;
+border-bottom-left-radius: 8px;
+}
+
+.ResinputBox span {
+margin-top: 5px;
+position: absolute;
+left: 0;
+transform: translateY(-4px);
+margin-left: 10px;
+padding: 10px;
+pointer-events: none;
+font-size: 12px;
+color: rgb(22, 116, 204);
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 3px;
+border-radius: 8px;
+}
+
+.ResinputBox .Resin:valid ~ span,
+.ResinputBox .Resin:focus ~ span {
+transform: translateX(113px) translateY(-15px);
+font-size: 0.8em;
+padding: 5px 10px;
+background: rgb(22, 116, 204);
+letter-spacing: 0.2em;
+color: #fff;
+border: 2px;
+}
+
+.ResinputBox .Resin:valid,
+.ResinputBox .Resin:focus {
+border: 2px solid rgb(22, 116, 204);
+border-radius: 8px;
+}
+
+.Resenter {
+height: 45px;
+width: 100px;
+border-radius: 5px;
+color: rgb(22, 116, 204);
+border: 2px solid rgb(22, 116, 204);
+cursor: pointer;
+background-color: transparent;
+transition: 0.5s;
+text-transform: uppercase;
+font-size: larger;
+letter-spacing: 2px;
+margin-bottom: 1em;
+}
+
+.Resenter:hover {
+background-color: rgb(22, 116, 204);
+color: white;
+}
+
+.ResPolicy {
+border: 1px solid black;
+width: 600px;
+padding: 10px;
+/* margin-left: %; */
+background-color: #3289db;
+border-top-right-radius: 40px;
+border-bottom-left-radius: 40px;
+height: 350px;
+}
+.resP {
+text-align: center;
+margin-bottom: 40px;
+color: rgb(22, 116, 204);
+}
+.OneSide {
+width: 45%;
+float: right;
+}
+.SecoSide {
+width: 45%;
+}
+
+
+
+.nav li button {
+display: inline-block !important;
+padding: 10px 20px !important;
+color: #fff !important;
+text-transform: capitalize;
+font-size: 15px;
+background: rgb(19,175,240);
+background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+border-radius: 23px;
+font-weight: 500 !important;
+letter-spacing: 0.3px !important;
+transition: all .5s;  }
+.submitedr{ 
+background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+}
+
+.white-button a{
+background-color: #fff;
+color: #007bff;
+}

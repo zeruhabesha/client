@@ -1,0 +1,119 @@
+.Reslogin {
+  color: #781515;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.Res {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  background: #e3e3e3;
+  box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 40%;
+}
+
+.ResinputBox {
+  position: relative;
+  width: 250px;
+  padding: 10px;
+}
+
+.ResinputBox .Resin {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #8a1010;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #be1111;
+  border-bottom: 2px solid #c30f0f;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.ResinputBox span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #6b1515;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.ResinputBox .Resin:valid ~ span,
+.ResinputBox .Resin:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #6d0e0e;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.ResinputBox .Resin:valid,
+.ResinputBox .Resin:focus {
+  border: 2px solid #eb1a1a;
+  border-radius: 8px;
+}
+
+.Resenter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #630a0a;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+}
+
+.Resenter:hover {
+  background-color: rgb(107, 15, 15);
+  color: white;
+}
+
+.ResPolicy {
+  border: 1px solid black;
+  width: 600px;
+  padding: 10px;
+  /* margin-left: %; */
+  background-color: #c8c8c8;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  height: 350px;
+}
+.resP {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #a91313;
+}
+.OneSide {
+  width: 45%;
+  float: right;
+}
+.SecoSide {
+  width: 45%;
+}

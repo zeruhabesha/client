@@ -1,0 +1,138 @@
+.train {
+  position: relative;
+  width: 550px;
+  height: 300px;
+  color: #312d2d;
+  background: #ab2908;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 140px;
+  margin-left: 60px;
+  margin-bottom: 80px;
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+
+.temporary_text {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 6px 12px;
+  color: #f8f8f8;
+  height: 300px;
+}
+
+.train_title {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.train_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* edit the width to fit card */
+  width: 100%;
+  padding: 20px;
+  background: #f2f2f2;
+  border-top-left-radius: 20px;
+  /* edit here to change the height of the content box */
+  transform: translateY(150px);
+  transition: transform 0.25s;
+}
+
+.train_content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.train_title {
+  color: #860e0e;
+  line-height: 15px;
+  margin-top: 80px;
+}
+
+.train_subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+.train_description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.train:hover .train_content {
+  transform: translateY(0);
+}
+
+.train:hover .train_description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+.trainan:hover {
+  color: brown;
+}
+
+@media screen and (max-width: 1024px) {
+  .train {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    color: #312d2d;
+    background: #ab2908;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 140px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .train {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    color: #312d2d;
+    background: #ab2908;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 140px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .train {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    color: #312d2d;
+    background: #ab2908;
+    overflow: hidden;
+    border-radius: 20px;
+    /* margin-top: 140px;
+    margin-left: 60px;
+    margin-bottom: 80px; */
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  }
+}

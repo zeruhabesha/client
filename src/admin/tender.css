@@ -1,0 +1,480 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .started li {
+    margin: 10PX 10px;
+    padding: 10px;
+    border: 1px solid #aa0600;
+    width:70%;
+    background:#aa0600;
+    color:rgb(255, 255, 255);
+    border-radius: 8px;
+    float: center;
+  }
+  
+  .started li:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #aa0600;
+    font-family: "Segoe Script";
+    
+  }
+  
+  .started li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+
+  .done li {
+    margin: 10PX 10px;
+    padding: 10px;
+    border: 1px solid #00a388;
+    width:70%;
+    background: #00a388;
+    color:rgb(255, 255, 255);
+    border-radius: 8px;
+    float: center;
+  }
+  .done li:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #00a388;
+    font-family: "Segoe Script";
+  }
+ 
+  span h4{
+    display: inline;
+  }
+li{
+    text-decoration: none;
+}
+span ul li a{
+    float: right;
+    text-decoration: none;
+}
+.sidebar-menu ul li span{
+  text-decoration: none;
+}
+
+.checkboxes *,
+.checkboxes *::before,
+.checkboxes *::after {
+  box-sizing: border-box;
+}
+
+.checkboxes *:not(:empty) {
+  transform-style: preserve-3d;
+}
+
+.checkboxes {
+  width: 100%;
+  max-width: 180px;
+  transform-style: preserve-3d;
+}
+
+.flipBox {
+  position: relative;
+  display: block;
+  text-align: left;
+  margin: 1em auto;
+  cursor: pointer;
+  --clr1: green;
+  --clr2: white;
+}
+
+.flipBox:active > .flipBox_boxOuter {
+  height: 25%;
+}
+
+.flipBox span {
+  padding-left: 1.25em;
+}
+
+.flipBox > input {
+  appearance: none;
+  position: fixed;
+  left: -100vmax;
+  top: -100vmax;
+}
+
+.flipBox > input:checked ~ .flipBox_boxOuter {
+  animation: flipBox1 1s forwards linear;
+}
+
+.flipBox > input:checked ~ .flipBox_boxOuter .flipBox_box {
+  animation: flipBox2 1s forwards ease-in-out;
+}
+
+.flipBox > input:checked ~ .flipBox_shadow {
+  animation: flipBox3 1s forwards ease-in-out;
+}
+
+.flipBox > input:not(:checked) ~ .flipBox_boxOuter {
+  animation: flipBox4 1s forwards linear;
+}
+
+.flipBox > input:not(:checked) ~ .flipBox_boxOuter .flipBox_box {
+  animation: flipBox5 1s forwards ease-in-out;
+}
+
+.flipBox > input:not(:checked) ~ .flipBox_shadow {
+  animation: flipBox6 1s forwards ease-in-out;
+}
+
+.flipBox > input:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.flipBox > input:disabled ~ .flipBox_boxOuter {
+  height: 0%;
+}
+
+.flipBox > input:disabled ~ .flipBox_boxOuter .flipBox_box > div:nth-child(6) {
+  background-color: #ccc;
+}
+
+.flipBox > input:disabled ~ .flipBox_boxOuter .flipBox_box > div:nth-child(-n + 5),
+.flipBox > input:disabled ~ .flipBox_shadow {
+  display: none;
+}
+
+.flipBox > input:focus-visible ~ span {
+  outline: 1px #000 solid;
+  outline-offset: 0.25em;
+}
+
+.flipBox_boxOuter {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1em;
+  height: 1em;
+  transform-origin: top;
+  transition: height 0.25s;
+}
+
+.flipBox_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1em;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.flipBox_box > div {
+  position: absolute;
+  width: 1em;
+  box-shadow: 0 0 0.25em #0007 inset;
+}
+
+.flipBox_box > div:nth-child(1) {
+  background-image: linear-gradient(var(--clr1), var(--clr2));
+  transform: rotateY(0deg) translateX(50%) rotateY(90deg);
+  height: 100%;
+}
+
+.flipBox_box > div:nth-child(2) {
+  background-image: linear-gradient(var(--clr1), var(--clr2));
+  transform: rotateY(90deg) translateX(50%) rotateY(90deg);
+  height: 100%;
+}
+
+.flipBox_box > div:nth-child(3) {
+  background-image: linear-gradient(var(--clr1), var(--clr2));
+  transform: rotateY(180deg) translateX(50%) rotateY(90deg);
+  height: 100%;
+}
+
+.flipBox_box > div:nth-child(4) {
+  background-image: linear-gradient(var(--clr1), var(--clr2));
+  transform: rotateY(270deg) translateX(50%) rotateY(90deg);
+  height: 100%;
+}
+
+.flipBox_box > div:nth-child(5) {
+  background-color: var(--clr1);
+  transform: rotateX(90deg) translateY(-0.5em);
+  transform-origin: top;
+  height: 1em;
+}
+
+.flipBox_box > div:nth-child(5)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr2);
+  clip-path: polygon(
+    12.5% 56.25%,
+    25% 43.75%,
+    37.5% 56.25%,
+    75% 18.75%,
+    87.5% 31.25%,
+    37.5% 81.25%,
+    12.5% 56.25%
+  );
+}
+
+.flipBox_box > div:nth-child(6) {
+  bottom: 0;
+  background-color: var(--clr2);
+  transform: rotateX(90deg) translateY(0.5em);
+  transform-origin: bottom;
+  height: 1em;
+}
+
+.flipBox_shadow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1em;
+  height: 1em;
+  transform: translateY(-50%) translateZ(-1px);
+  background-color: #0007;
+  filter: blur(0.2em);
+}
+
+@keyframes flipBox1 {
+  0%,
+  100% {
+    transform: rotateX(90deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: rotateX(90deg) translateY(2em);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flipBox2 {
+  from {
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(180deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0deg);
+  }
+}
+
+@keyframes flipBox3 {
+  0%,
+  100% {
+    transform: translateY(-50%) translateZ(-1px) scale(1);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-50%) translateZ(-1px) scale(1.5);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flipBox4 {
+  0%,
+  100% {
+    transform: rotateX(90deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: rotateX(90deg) translateY(2em);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flipBox5 {
+  from {
+    transform: translate(-50%, -50%) rotateX(-180deg) rotateY(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(-360deg) rotateY(180deg);
+  }
+}
+
+@keyframes flipBox6 {
+  0%,
+  100% {
+    transform: translateY(-50%) translateZ(-1px) scale(1);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-50%) translateZ(-1px) scale(1.5);
+    animation-timing-function: ease-in;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .flipBox_boxOuter,
+  .flipBox_box,
+  .flipBox_shadow {
+    animation-play-state: paused !important;
+  }
+
+  .flipBox_boxOuter {
+    transition: none;
+  }
+}
+
+
+
+.gate {
+  display: inline-block;
+  width: 95%;
+  padding: 10px 0 10px 69px;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #377D6A;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 65px;
+  transition: all .3s ease-in-out;
+}
+
+.gate::-webkit-input-placeholder {
+  color: #efefef;
+  text-indent: 0;
+  font-weight: 300;
+}
+
+.gate + label {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+  background: #7AB893;
+  transition: all .4s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  transform-origin: left bottom;
+  z-index: 99;
+}
+
+  .gate + label:before,
+.gate + label:after {
+  content: "";
+  position: absolute;
+  top: 10px; /* Example value */
+  /* Additional CSS properties */
+}
+
+.gate:focus,
+.gate:active {
+  color: #377D6A;
+  text-indent: 0;
+  background: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+  &::-webkit-input-placeholder {
+    color: #aaa;
+  }
+  + label {
+    transform: rotate(-66deg);
+    border-radius: 3px;
+    
+    &:before {
+      transform: rotate(10deg);
+    }
+  }
+}
+.skinny {
+  display: inline-block;
+  width: 215px;
+  padding: 10px 0 10px 15px;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #377D6A;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 75px;
+  transition: all .3s ease-in-out;
+  
+  &::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+  }
+
+  + label {
+    display: inline-block;
+    position: absolute;
+    transform: translateX(0);
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgba(19,74,70,.4);
+    transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .3s ease-in-out;
+    }
+    &:before {
+      top: 5px;
+      bottom: 5px;
+      background: #377D6A; 
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    &:after {
+      top: 0;
+      bottom: 0;
+      background: #377D6A;
+    }
+  }
+}
+
+.row1 {
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 60px 30px;
+  background: #032429; */
+  text-align: center;
+}
+
+/* .row1:first-child {
+  padding: 40px 30px;
+} */
+
+.row1:nth-child(2),
+.row1:nth-child(8),
+.row1:nth-child(10) {
+  /* background: #bbc9c8; */
+}
+
+.row1:nth-child(3),
+.row1:nth-child(7) {
+  /* background: #377D6A; */
+}
+
+.row1:nth-child(4),
+.row1:nth-child(6) {
+  /* background: #7AB893; */
+}
+
+.row1:nth-child(5) {
+  /* background: #B2E3AF; */
+}
+
+.row1 span {
+  position: relative;
+  display: inline-block;
+  margin: 5px 3px;
+  width: 100%;
+}

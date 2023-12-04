@@ -1,0 +1,724 @@
+
+/* @import url('https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css'); */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* width:100%; */
+  }
+  td{
+    /* width:100%; */
+    overflow: auto;
+  }
+  th {
+    background-color: #eee;
+    font-weight: bold;
+    /* width:50%; */
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+
+  .dropdown{
+padding-left: 0%;
+  }
+  
+  .btns{
+    padding:5px;
+  }
+   table tr th {
+    color: black;
+      }
+        table tr td {
+    color: black;
+      }
+
+
+  /* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+
+
+/* Table.css */
+.data-table1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table1 th,
+.data-table1 td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table1 th {
+  cursor: pointer;
+}
+
+.print-button,
+.export-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.print-button {
+  margin-right: 10px;
+}
+
+/* CSS for print media query */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .data-table1,
+  .data-table1 * {
+    visibility: visible;
+  }
+  .data-table1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .print-button,
+  .export-button {
+    display: none;
+  }
+}
+/* Reset default styles for input */
+input[type="search"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Style the search icon inside the input */
+input[type="search"]::placeholder {
+  color: #999;
+}
+
+/* Hover effect */
+input[type="search"]:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect */
+input[type="search"]:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding to the left of the input to accommodate the search icon */
+input[type="search"] {
+  padding-left: 30px;
+}
+
+/* Style the search icon using a pseudo-element (you can use an image or font icon) */
+input[type="search"]::before {
+  content: "\f002"; /* Unicode character for search icon (can be replaced with an image or other icon) */
+  font-family: "Font Awesome 5 Free"; /* Replace with the font you're using for icons (if applicable) */
+  position: absolute;
+  left: 200px;
+  top: 150%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  pointer-events: none; /* Ensure the icon does not interfere with input interaction */
+}
+
+
+
+.button8 {
+  padding: 2vh 2vh;
+    font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4vh;
+  box-shadow: 0 9px #999;
+}
+
+.button8:hover {background-color: #007bff;}
+
+.button8:active {
+  background-color: #007bff;;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 8px);
+}
+
+.img8:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
+
+
+
+strong {
+  font-weight: bold; 
+}
+
+em {
+  font-style: italic; 
+}
+
+table {
+  background: #f5f5f5;
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 30px auto;
+  text-align: left;
+  width: 800px;
+} 
+
+th {
+  background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(rgb(0, 153, 255), #007bff);
+  border-left: 1px solid #555;
+  border-right: 1px solid #777;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #007bff;
+  box-shadow: inset 0 1px 0 #999;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  text-shadow: 0 1px 0 #000;  
+}
+
+th:after {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+  content: '';
+  display: block;
+  height: 25%;
+  left: 0;
+  margin: 1px 0 0 0;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+th:first-child {
+  border-left: 1px solid #777;  
+  box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+  box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 300ms;
+}
+
+td:first-child {
+  box-shadow: inset 1px 0 0 #fff;
+} 
+
+td:last-child {
+  border-right: 1px solid #e8e8e8;
+  box-shadow: inset -1px 0 0 #fff;
+} 
+
+tr {
+  background: url(https://jackrugile.com/images/misc/noise-diagonal.png); 
+}
+
+tr:nth-child(odd) td {
+  background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png); 
+}
+
+tr:last-of-type td {
+  box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+  box-shadow: inset 1px -1px 0 #fff;
+} 
+
+tr:last-of-type td:last-child {
+  box-shadow: inset -1px -1px 0 #fff;
+} 
+
+tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+ 
+.send { 
+  font-size: 30px; 
+  border: none; 
+  /* position: absolute;  */
+  /* top: 50%; 
+  left: 50%;  */
+  /* margin-left: -0.5em; 
+  margin-top: -0.5em;  */
+  background-color: transparent; 
+  padding: 0; 
+  cursor: pointer; 
+  color: white; 
+} 
+ 
+.send:focus { 
+  outline: none; 
+  animation: fly 1000ms ease; 
+} 
+ 
+@keyframes fly { 
+  10% { 
+    transform: translate(-10px, 10px); 
+  } 
+  40% { 
+    transform: translate(-15px, 15px); 
+    opacity: 1; 
+  } 
+  100% { 
+    transform: translate(100vw, -100vh); 
+    opacity: 0; 
+  } 
+}
+
+
+
+
+
+  .tooltip4 {
+  position: relative;
+  background: #78C55F;
+  padding: 5px 12px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 100%;
+  color: #ffffff;
+}
+
+.tooltip4:before,
+.tooltip4:after {
+ position: absolute; 
+  content: '';
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tooltip4:before {
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: #78C55F transparent transparent transparent;
+  top: -15px;
+  transform: translateY(20px);
+}
+
+.tooltip4:after {
+  content: attr(data-tooltip);
+  background: #78C55F;
+  width: 160px;
+  height: 70px;
+  font-size: 13px;
+  font-weight: 300;
+  top: -75px;
+  left: -10px;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transform: translateY(20px);
+}
+
+.tooltip4:hover::before,
+.tooltip4:hover::after {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+@keyframes shake {
+  0% { 
+    transform: rotate(2deg);
+  }
+  50% {
+   transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#anim:hover {
+  animation: shake 500ms ease-in-out forwards;
+}
+
+
+.label {
+  /* position: absolute; */
+  /* bottom: 0px;
+  left: 0px; */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+.label::after {
+  content: "";
+  /* position: absolute; */
+  /* bottom: -1px; */
+  /* left: 0px; */
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #fce38a;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.content-name {
+  /* position: absolute; */
+  /* bottom: 0px; */
+  /* left: 0px; */
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+.input:focus {
+  outline: none;
+}
+.input:focus + .label-name .content-name,
+.input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  left: 0px;
+  color: #fce38a;
+}
+.input:focus + .label-name::after,
+.input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.input{
+  width:90% ;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+#container12 {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:20px;  
+  position:fixed;
+  width:100%;
+  top:0;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+   /*.backmodal{
+  
+  width: 150px;
+    height: 150px; 
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .backmodal:hover {
+    background-color: rgb(51, 209, 230);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+*/
+
+
+
+
+.train {
+  position: relative;
+  margin: 20px;
+  width: 44%;
+  height: 303px;
+  color: #312d2d;
+  background: rgb(0, 103, 255);
+  overflow: hidden;
+  border-radius: 20px;
+  /* margin-bottom: 80px; */
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+.temporary_text {
+font-weight: bold;
+font-size: 21px;
+padding: 6px 12px;
+color: #f8f8f8;
+height: 250px;
+}
+
+.train_title {
+font-weight: normal;
+font-size: 16px;
+}
+
+.train_content {
+position: absolute;
+left: 0;
+bottom: 0;
+/* edit the width to fit card */
+width: 100%;
+padding: 20px;
+background: #f2f2f2;
+border-top-left-radius: 20px;
+/* edit here to change the height of the content box */
+transform: translateY(150px);
+transition: transform 0.25s;
+}
+
+.train_content::before {
+content: "";
+position: absolute;
+top: -47px;
+right: -45px;
+width: 100px;
+height: 100px;
+transform: rotate(-175deg);
+border-radius: 50%;
+box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.train_title {
+color: #860e0e;
+line-height: 15px;
+margin-top: 80px;
+}
+
+.train_subtitle {
+display: block;
+font-size: 12px;
+margin-bottom: 60px;
+}
+
+.train_description {
+font-size: 14px;
+opacity: 0;
+transition: opacity 0.5s;
+}
+
+.train:hover .train_content {
+transform: translateY(0);
+}
+
+.train:hover .train_description {
+opacity: 1;
+transition-delay: 0.25s;
+}
+.trainan:hover {
+color: brown;
+}
+
+@media screen and (max-width: 1024px) {
+.train {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  color: #312d2d;
+  background: #ab2908;
+  overflow: hidden;
+  border-radius: 20px;
+  /* margin-top: 140px; */
+  margin-left: 170px;
+  /* margin-bottom: 80px; */
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+}
+
+@media screen and (max-width: 768px) {
+.train {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  color: #312d2d;
+  background: #ab2908;
+  overflow: hidden;
+  border-radius: 20px;
+  /* margin-top: 140px; */
+  margin-left: 60px;
+  /* margin-bottom: 80px; */
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+}
+
+@media screen and (max-width: 568px) {
+.train {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  color: #312d2d;
+  background: #ab2908;
+  overflow: hidden;
+  border-radius: 20px;
+  /* margin-top: 140px; */
+  margin-left: 60px;
+  /* margin-bottom: 80px; */
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+}
+
+
+
+
+
+
+
+
+

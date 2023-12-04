@@ -1,0 +1,383 @@
+/* .menu-items{
+    overflow-y: auto;
+}
+@media (max-width: 3000px) {
+.mode{
+    display: block;
+
+}
+.mode-toggle{
+    display: block;
+}
+
+}
+
+.nav1{
+
+    background-color: #242526;
+}
+.logo-image img{
+   width:180px;
+   height: 60px;
+   margin-left: 50px;
+} */
+
+/* .nav1 .menu-items .nav-links li a .link-name{
+    color:white
+}
+
+.nav1 .menu-items .nav-links li:hover {
+    background-color:rgb(255, 255, 255);
+    color:rgb(202, 18, 18);
+    border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .nav-links li a:hover {
+    color:black
+}
+.nav1 .menu-items .nav-links li:hover a::before{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -20px;
+    height: 70px;
+    width: 25px;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 0 -25px 0 0 #ffffff; 
+    margin-left: 240px;
+}
+
+.nav1 .menu-items .nav-links li:hover .side3:hover{
+    color:black;
+}
+
+.nav1 .menu-items .logout-mode li a .link-name{
+    color:white;
+    width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover {
+    background-color:white;
+    color:black;
+border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .logout-mode li a:hover {
+    color:black;
+    width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover a::before{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -20px;
+    height: 70px;
+    width: 25px;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 0 -25px 0 0 #ffffff; 
+    margin-left: 240px;
+} */
+
+
+/* .fa-angle-double-right {
+    animation: move 2s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(5px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+
+  .fa-scroll {
+    animation: scroll 2s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .fa-scroll-container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .fa-scroll-container .fa-scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.nav1 {
+  background-color: #242526;
+
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.logo-image img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
+
+.link-name {
+  margin-left: 10px;
+}
+
+.logout-mode {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.logout-mode li {
+  margin-bottom: 10px;
+}
+
+.logout-mode a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+} */
+
+
+
+
+/* 
+.nav1 .menu-items .nav-links li a .link-name{
+  color:white
+}
+
+.nav1 .menu-items .nav-links li:hover {
+  background-color:rgb(255, 255, 255);
+  color:rgb(202, 18, 18);
+  border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .nav-links li a:hover {
+  color:black
+}
+.nav1 .menu-items .nav-links li:hover a::before{
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -20px;
+  height: 70px;
+  width: 25px;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 -25px 0 0 #ffffff; 
+  margin-left: 240px;
+}
+
+.nav1 .menu-items .nav-links li:hover .side3:hover{
+  color:black;
+}
+
+.nav1 .menu-items .logout-mode li a .link-name{
+  color:white;
+  width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover {
+  background-color:white;
+  color:black;
+border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .logout-mode li a:hover {
+  color:black;
+  width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover a::before{
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -20px;
+  height: 70px;
+  width: 25px;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 -25px 0 0 #ffffff; 
+  margin-left: 240px;
+} */
+
+
+.menu-items{
+  /* overflow-y: auto; */
+}
+@media (max-width: 3000px) {
+.mode{
+  display: block;
+
+}
+.mode-toggle{
+  display: block;
+}
+
+}
+
+.nav1{
+
+background-color: #242526;
+}
+.logo-image img{
+ width:180px;
+ height: 60px;
+ margin-left: 50px;
+}
+
+.nav1 .menu-items .nav-links li a .link-name{
+  color:white
+}
+
+.nav1 .menu-items .nav-links li:hover {
+  background-color:rgb(255, 255, 255);
+  color:rgb(202, 18, 18);
+  border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .nav-links li a:hover {
+  color:black
+}
+.nav1 .menu-items .nav-links li:hover a::before{
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -20px;
+  height: 70px;
+  width: 44px;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 -25px 0 0 #ffffff; 
+  margin-left: 235px;
+}
+
+.nav1 .menu-items .nav-links li:hover .side3:hover{
+  color:black;
+}
+
+.nav1 .menu-items .logout-mode li a .link-name{
+  color:white;
+  width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover {
+  background-color:white;
+  color:black;
+border-radius: 20px 0px 0px 20px;}
+.nav1 .menu-items .logout-mode li a:hover {
+  color:black;
+  width:100%;
+}
+.nav1 .menu-items .logout-mode li:hover a::before{
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -20px;
+  height: 70px;
+  width: 25px;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 0 -25px 0 0 #ffffff; 
+  margin-left: 240px;
+}
+
+
+.fa-angle-double-right {
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(4px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.fa-scroll {
+  animation: scroll 3s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.fa-scroll-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.fa-scroll-container .fa-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown-toggle::after {
+  display: none;
+;
+}
+
+.fa-home{
+  color: #10b3ff;
+    }
+
+.container00 .right1 {
+      position: relative;
+      float: left;
+      width: 62.4%;
+      height: 100%;
+  }

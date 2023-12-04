@@ -1,0 +1,232 @@
+/* Table.css */
+.data-table1 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table1 th,
+  .data-table1 td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table1 th {
+    cursor: pointer;
+  }
+  
+  .print-button,
+  .export-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .print-button {
+    margin-right: 10px;
+  }
+  
+  /* CSS for print media query */
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    .data-table1,
+    .data-table1 * {
+      visibility: visible;
+    }
+    .data-table1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    .print-button,
+    .export-button {
+      display: none;
+    }
+  }
+  /* Reset default styles for input */
+input[type="search"] {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: larger;
+    color: #333;
+    width: 50%;
+    padding: 2vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Style the search icon inside the input */
+  input[type="search"]::placeholder {
+    color: #999;
+  }
+  
+  /* Hover effect */
+  input[type="search"]:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Focus effect */
+  input[type="search"]:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add some padding to the left of the input to accommodate the search icon */
+  input[type="search"] {
+    padding-left: 5vh;
+  }
+  
+  /* Style the search icon using a pseudo-element (you can use an image or font icon) */
+  input[type="search"]::before {
+    content: "\f002"; /* Unicode character for search icon (can be replaced with an image or other icon) */
+    font-family: "Font Awesome 5 Free"; /* Replace with the font you're using for icons (if applicable) */
+    position: absolute;
+    left: 200px;
+    top: 150%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+    pointer-events: none; /* Ensure the icon does not interfere with input interaction */
+  }
+  
+  .multi-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgemp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .editimg {
+    display: none;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .imgemp:hover .editimg {
+    display: block;
+  }
+/* 
+.multi-button {
+  z-index: 0;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  border-radius: 100%;
+  width: 0rem;
+  height: 0rem;
+  transform: translate(-50%, -50%);
+  transition: .25s cubic-bezier(0.25, 0, 0, 1);
+}
+.multi-button button {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 100%;
+  background: var(--background);
+  color: var(--text);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: .25s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0rem -.25rem var(--background);
+}
+.multi-button button:hover {
+  background: var(--text);
+  color: var(--background);
+  box-shadow: 0 0 1rem -.25rem var(--background);
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background: var(--background);
+  color: var(--text);
+}
+.container:hover .multi-button,
+ .multi-button:focus-within {
+    width: 10rem;
+    height: 10rem;
+} */
+
+
+.btn8 {
+  background: transparent;
+  width: 39%;
+  position: relative;
+  padding: 3px;
+  color: #1ECD97;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 500ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  border-radius: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  border: 2px solid #1ECD97;
+  text-decoration: none;
+}
+
+/* In Progress Button */
+.btn8-progress {
+  width: 100%;
+  color: transparent;
+}
+
+.btn8-fill:after {
+  content: '';
+  background: #1ECD97;
+  position: absolute;
+  top: 0; left: 0;
+  /* height: 100%; */
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0;
+  display: block;
+  animation: fill 3.2s linear forwards;
+}
+
+/* Button Complete */
+.btn8-complete {
+  padding: 3px;
+  width: 100%;
+  color: #fff;
+  pointer-events: none;
+}
+
+.btn8-complete:after {
+  font-family: FontAwesome;
+  content: "\f00c";
+  color: #fff;
+  height: 100%;
+  padding-left: 3px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1ECD97;
+}
+
+/* Animation */
+@keyframes fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
